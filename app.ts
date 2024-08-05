@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 
 // Sync All Models with DB
 db.sequelize.sync({ force: false }).then(() => {
-  console.log('Database & tables created!');
+  console.log('Database & tables created.');
 });
 
 // Middleware to parse requests
