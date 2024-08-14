@@ -5,8 +5,6 @@ export class UserService{
     constructor(private userRepository: UserRepository){
     }
 
-    // All functions OK!
-
     // Get all users.
     async getUserList(): Promise<IUser[]>{
         try{

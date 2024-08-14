@@ -30,7 +30,6 @@ export const getUserList = async (req: Request, res: Response) =>{
     }
 }
 
-// no history - with history ayrımının yapılması lazım
 export const getUser = async (req: Request, res:Response) =>{
     const userService: UserService = new UserService( new UserRepository());
     const transactionManagementService: TransactionManagementService = new TransactionManagementService( new TransactionManagementRepository());
